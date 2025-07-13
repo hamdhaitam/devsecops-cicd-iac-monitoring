@@ -1,0 +1,11 @@
+# Add job for node exporter in prometheus
+# $ cd /etc/prometheus/, ls, $ sudo nano prometheus.yml and below the job of prometheus, add job for node exporter
+#  - job_name: 'node_exporter'
+#    static_configs:
+#      - targets: ['IP-Address:9100'] 
+#
+# On monitoring server go to $ cd /etc/prometheus/ & $ sudo nano prometheus.yml and add job for Jenkins
+# - job_name: 'jenkins'
+#    metrics_path: '/prometheus'
+#    static_configs:
+#      - targets: ['IP-Address:8080']
